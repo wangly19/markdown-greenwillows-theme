@@ -1,0 +1,212 @@
+
+/* 定义默认字体 */
+#nice {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  word-break: break-all;
+}
+#nice p {
+  font-size: .9em;
+  text-indent: 2em;
+  letter-spacing: 2px;
+}
+/* 一级标题 */
+#nice h1 {
+  border-bottom: 2px solid #77AF9C;
+  font-size: 1.6em;
+}
+/* 一级标题内容 */
+#nice h1 .content {
+  display: inline-block;
+  font-weight: bold;
+  border-bottom: 2px solid #77AF9C;
+  color:  #77AF9C;
+}
+#nice h1 .content:hover::before {
+  content: "#";
+  margin-right: 5px;
+  font-weight: normal;
+}
+/* 一级标题修饰 请参考有实例的主题 */
+#nice h1:after {
+}
+/* 二级标题 */
+#nice h2 {
+  border-bottom: 2px solid #77AF9C;
+  font-size: 1.3em;
+}
+/* 二级标题内容 */
+#nice h2 .content {
+  display: inline-block;
+  font-weight: bold;
+  border-bottom: 2px solid #77AF9C;
+  color:  #77AF9C;
+}
+/* 二级标题修饰 请参考有实例的主题 */
+#nice h2 .content:hover::before {
+  content: "##";
+  margin-right: 5px;
+  font-weight: normal;
+}
+/* 三级标题 */
+#nice h3 {
+  text-align: center;
+}
+/* 三级标题内容 */
+#nice h3 .content, #nice h4 .content, #nice h5 .content, #nice h6 .content {
+  font-size: .9em;
+  color: #77AF9C;
+  font-weight: normal;
+}
+/* 三级标题修饰 请参考有实例的主题 */
+#nice h3:after {
+  content: "/";
+  color: #77AF9C;
+  font-weight: normal;
+  margin-left: 15px;
+  
+}
+#nice h3:before {
+  content: "/";
+  color: #77AF9C;
+  font-weight: normal;
+  margin-right: 15px;
+}
+/* 无序列表整体样式
+ * list-style-type: square|circle|disc;
+ */
+#nice ul {
+}
+/* 有序列表整体样式
+ * list-style-type: upper-roman|lower-greek|lower-alpha;
+ */
+#nice ol {
+}
+/* 列表内容，不要设置li
+ */
+#nice li section {
+}
+/* 引用
+ * 左边缘颜色 border-left-color: black;
+ * 背景色 background: gray;
+ */
+#nice blockquote {
+  font-style: normal;
+  position: relative;
+  padding: 10px;
+  padding-bottom: 25px;
+  position: relative;
+  line-height: 1.8;
+  text-indent: 0;
+  border: none;
+  color: #888;
+  background: rgba(119,175,156, .22);
+}
+
+#nice blockquote:before {
+  content: "“";
+  display: inline;
+  color: #6E7783;
+  font-size: 4em;
+  font-family: Arial, serif;
+  line-height: 1em;
+}
+#nice blockquote:after {
+  content: "- - 曾巩";
+  display: inline;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  color: #6E7783;
+  font-size: .9em;
+}
+
+/* 引用文字 */
+#nice blockquote p {
+  display: inline;
+}
+/* 链接 */
+#nice a {
+  color: rgba(119,175,156);
+  font-weight: normal;
+  border-bottom: none;
+  padding: 2px 5px;
+  transition: all .5s;
+}
+#nice a:hover {
+  background: rgba(119,175,156, .5);
+  color: #6E7783;
+}
+/* 加粗 */
+#nice strong {
+}
+/* 斜体 */
+#nice em {
+}
+/* 加粗斜体 */
+#nice em strong {
+}
+/* 删除线 */
+#nice del {
+}
+/* 分隔线
+ * 粗细、样式和颜色
+ */
+#nice hr {
+  border-top: 2px solid #77AF9C;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#nice hr::before {
+  z-index: 2;
+  content: "分割线";
+  padding: 2px 10px 2px 10px;
+  font-size: 12px;
+  position: absolute;
+  left: 50%;
+  top: -12px;
+  transform: translate(-50%);
+  background:  #77AF9C;
+  color:  #FFF;
+}
+/* 图片描述文字 */
+#nice figcaption {
+}
+/* 行内代码 */
+#nice p code, #nice li code {
+  background: rgba(119,175,156, .22);
+  border-radius: 0;
+  padding: 2px 5px;
+  border-left: 2px solid rgba(119,175,156);
+  color: #6E7783;
+}
+/* 非微信代码块
+ * 代码块不换行 display: -webkit-box !important;
+ * 代码块换行 display: block;
+ */
+#nice pre code {
+}
+/*
+ * 表格内的单元格
+ * 字体大小 font-size: 16px;
+ * 边框 border: 1px solid #ccc;
+ * 内边距 padding: 5px 10px;
+ */
+#nice table tr th {
+  border: 1px solid rgba(119,175,156);
+  background: rgba(119,175,156, .22);
+  color: #6E7783;
+}
+#nice table tr td {
+  border: none;
+  border-bottom: 1px solid #f0f5f9;
+  background: #FFF;
+}
+/* 脚注文字 */
+#nice .footnote-word {
+  color: #ff3502;
+}
+/* 脚注上标 */
+#nice .footnote-ref {
+  color: rgba(119,175,156);
+}
